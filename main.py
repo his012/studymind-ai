@@ -10,7 +10,6 @@ app = FastAPI(title="StudyMind AI", version="1.0.0")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["https://studymind-ai-ebon.vercel.app"],
-    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
